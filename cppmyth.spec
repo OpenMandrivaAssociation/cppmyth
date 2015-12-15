@@ -21,7 +21,7 @@ the protocol version of MythTV 0.26 to 0.28-pre.
 
 %package -n %libname
 Summary:        cppmyth library
-Group:          Video
+Group:          System/Libraries
 
 %description -n %libname
 This project is intended to create a easy client interface for the MythTV
