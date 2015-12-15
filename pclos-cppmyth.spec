@@ -5,7 +5,7 @@
 
 Name:           cppmyth
 Version:        1.1.10
-Release:        %mkrel 1
+Release:        1
 Summary:        Client interface for the MythTV backend
 Group:          System/Libraries
 License:        GPLv2+
@@ -21,7 +21,7 @@ the protocol version of MythTV 0.26 to 0.28-pre.
 
 %package -n %libname
 Summary:        cppmyth library
-Group:          System/Libraries
+Group:          Video
 
 %description -n %libname
 This project is intended to create a easy client interface for the MythTV
@@ -31,7 +31,7 @@ the protocol version of MythTV 0.26 to 0.28-pre.
 
 %package -n     %{develname}
 Summary:    Development files for %{name}
-Group:      Development/Libraries
+Group:      Development/C
 Requires:   %{libname} = %{version}-%{release}
 Provides:	cppmyth-devel = %{version}-%{release}
 Provides:	libcppmyth-devel = %{version}-%{release}
@@ -66,8 +66,4 @@ rm -rf %buildroot
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/%{name}.pc
 
-
-%changelog
-* Sat Aug 22 2015 bb <bb> 1.1.10-1pclos2015
-- import into pclos for kodi 15.1
 
