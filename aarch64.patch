@@ -1,0 +1,22 @@
+Index: cppmyth-1.1.10/cppmyth/src/atomic.h
+===================================================================
+--- cppmyth-1.1.10.orig/cppmyth/src/atomic.h
++++ cppmyth-1.1.10/cppmyth/src/atomic.h
+@@ -145,7 +145,7 @@ static CC_INLINE unsigned atomic_increme
+   /* The value for __val is in '__oldval' */
+   __val = __oldval;
+ 
+-#elif (defined __ARM_ARCH && __ARM_ARCH >= 7)
++#elif (defined __ARM_ARCH && __ARM_ARCH == 7)
+   int inc = 1;
+   __asm__ volatile (
+     "dmb     ish\n"           /* Memory barrier */
+@@ -281,7 +281,7 @@ static CC_INLINE unsigned atomic_decreme
+   /* The value for __val is in '__oldval' */
+   __val = __oldval;
+ 
+-#elif (defined __ARM_ARCH && __ARM_ARCH >= 7)
++#elif (defined __ARM_ARCH && __ARM_ARCH == 7)
+   int dec = 1;
+   __asm__ volatile (
+     "1:"
