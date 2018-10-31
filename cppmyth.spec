@@ -5,7 +5,7 @@
 
 Name:           cppmyth
 Version:        1.1.10
-Release:        1
+Release:        2
 Summary:        Client interface for the MythTV backend
 Group:          System/Libraries
 License:        GPLv2+
