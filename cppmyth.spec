@@ -4,8 +4,8 @@
 
 
 Name:           cppmyth
-Version:        1.1.10
-Release:        3
+Version:        2.20.4
+Release:        1
 Summary:        Client interface for the MythTV backend
 Group:          System/Libraries
 License:        GPLv2+
@@ -43,7 +43,7 @@ applications that use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 
 %build
